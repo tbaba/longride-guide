@@ -9,4 +9,15 @@
     = javascript_include_tag "all"
 
   %body{ class: page_classes }
-    = yield
+    .nav.header-nav
+      .container
+        .header-brand
+          = link_to 'ロングライドガイド', '/'
+
+    .contents
+      .container
+        = yield
+
+    .footer
+      .container
+        %p!= 'Copyright 2014 "ロングライドガイド".'

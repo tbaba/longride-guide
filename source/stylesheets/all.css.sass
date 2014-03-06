@@ -1,0 +1,56 @@
+@charset 'utf-8'
+
+@import compass/reset
+@import compass/css3
+
+$mainColor: #f39c12
+$footerColor: #2c3e50
+$baseColor: #ecf0f1
+
+$mainFontColor: #ecf0f1
+$baseFontColor: #2c3e50
+
+
+$linkFontColor: #2980b9
+
+body
+  background-color: $baseColor
+  color: $baseFontColor
+
+a
+  color: $linkFontColor
+  text-decoration: none
+  &:hover
+    color: darken($linkFontColor, 10%)
+    text-decoration: underline
+
+.container
+  width: 900px
+  margin: 0 auto
+
+.nav.header-nav
+  $font-size: 16px
+  $font-padding: (50px - 16px) / 2
+  height: 50px
+
+  background-color: $mainColor
+  color: $mainFontColor
+
+  margin-bottom: 30px
+
+  .header-brand
+    display: inline-block
+    a
+      display: block
+      padding: $font-padding 5px
+      color: $mainFontColor
+
+.contents
+  margin-bottom: 30px
+
+.footer
+  background-color: $footerColor
+  color: $mainFontColor
+  padding: 20px 0px
+  .container
+    margin-bottom: 10px
